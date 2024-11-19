@@ -9,7 +9,7 @@ import { API_KEY_V4 } from "../../../api/const";
 
 function Form() {
   const [address, setAddress] = useState("");
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [balance, setBalance] = useState("");
 
