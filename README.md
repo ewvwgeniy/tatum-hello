@@ -1,6 +1,6 @@
 # `create-preact`
 
-<h2 style="text-align: center">
+<h2 align="center">
   <img height="256" width="256" src="./src/assets/preact.svg" alt="preact logo">
 </h2>
 
