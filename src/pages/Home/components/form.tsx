@@ -64,7 +64,7 @@ function Form() {
       </button>
       <p class={`form__balance-label ${error && "form__balance-label_error"}`}>
           {loading && "Loading..."}
-          {balance && `Balance: ${balance}`}
+          {balance && `Balance: ${balance} ETH`}
           {error && <>{error}</>}
       </p>
     </div>
