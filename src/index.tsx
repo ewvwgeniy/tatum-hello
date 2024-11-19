@@ -3,7 +3,7 @@ import { LocationProvider, Router, Route } from "preact-iso";
 
 import { Header } from "./components/Header.tsx";
 import { Home } from "./pages/Home";
-import { NotFound } from "./pages/_404.tsx";
+import { NotFound} from "./pages/_404.tsx";
 import "./style.css";
 
 export function App() {
