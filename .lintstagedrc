@@ -1,4 +1,0 @@
-{
-  "*.{js,jsx,ts,tsx}": "npm run lint",
-  "*.{js,jsx,ts,tsx,json,mjs}": "prettier --check"
-}
