@@ -3,6 +3,7 @@
   "type": "module",
   "homepage": "https://ewvwgeniy.github.io/tatum-hello/",
   "scripts": {
+    "prepare": "husky install",
     "dev": "vite",
     "build": "vite build",
     "build:gh-pages": "vite build --base=/tatum-hello/",
