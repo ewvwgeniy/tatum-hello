@@ -1,6 +1,10 @@
 // App.js
+import { JSX } from "preact";
+import { useState } from 'preact/hooks';
+
 import { Network, TatumSDK, Ethereum } from "@tatumio/tatum";
-import React, { useState } from "react";
+
+import './style.css';
 
 function Form() {
   const [inputValue, setInputValue] = useState(""); // State to hold the input value
@@ -22,21 +26,26 @@ function Form() {
     setLabelText(`Balance: ${balanceData.balance}`);
   };
 
+  const onInputChange: JSX.GenericEventHandler<HTMLInputElement> = (e) => {
+      if (e.target instanceof HTMLInputElement) {
+          setInputValue(e.target.value);
+      }
+  }
+
   return (
     <div>
       <p>
         <input
           type="text"
           value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          placeholder="Enter ETH wallet address to get balance"
-          style={{ padding: "5px", width: "320px" }}
+          onChange={onInputChange}
+          class="form__input"
         />
       </p>
-      <button onClick={handleButtonClick} style={{ padding: "5px" }}>
+      <button onClick={handleButtonClick} class="form__button">
         Click Me
       </button>
-      <p style={{ padding: "5px", fontSize: "16px", fontWeight: "bold" }}>
+      <p class="form__balance-label">
         {labelText}
       </p>
     </div>

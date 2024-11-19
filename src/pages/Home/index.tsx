@@ -1,5 +1,5 @@
 import preactLogo from '../../assets/tatum.jpeg'
-import Form from './form';
+import Form from './components/form';
 import './style.css';
 
 export function Home() {
